@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* 五星评价 start */
+
+.bb2 {
+	border-bottom: 2px solid #f6f6f6;
+}
+.mgt16 {
+	margin-top: 0.8rem; /* 16px; */
+}
+.a-row {
+	font-size: 1.1rem; /* 30px; */
+	color: #666666;
+	height: 2.5rem; /* 114px; */
+	line-height: 2.5rem;/* 114px; */
+	/* background-color: #efefef; */
+}
+.row-left {
+	float: left;
+	/* width:36%; */
+	margin-left: 4rem; /* 36px; */
+	/* font-weight: 600; */
+}
+.row-right {
+	float: right;
+	margin-right: 4rem; /* 36px; */
+	color: #a0a0a0;
+
+	.ratyWidth {
+		width: 9.5rem; /* 230px; */
+	}
+
+	.fontWidth {
+		width: 3.7rem; /* 94px; */
+	}
+
+}
+
+
+	
+/* 五星评价 end */
+
+.a-textarea {
+	height: 17.5rem; /* 350px; */
+	width: 80%;
+	line-height: 150%;
+	font-size: 1.2rem; /* 26px; */
+	color: #323232;
+	padding: 1.3rem; /* 36px; */
+	 /* 0 0 16px 30px; */
+	border: 1px solid #eeeeee;
+	word-break:break-all;
+	word-wrap: break-word;
+	margin: 1.5rem 10% 0;
+}
+/*---增加评价部分--strat-- */
+.z_evaluation{
+	width:100%;
+	height:6.0rem;
+	background-color:#f6f6f6;
+	/* line-height: 6rem; */
+}
+.z_veap{
+	width: 80%;
+	display: table;
+	vertical-align: middle;
+	height:100%;
+	margin:auto;
+	/* text-align:center; */
+	font-size:1.5rem;
+}
+.z_veapsp1{
+	width: 0.8rem;
+	height: 0.1rem;
+	display: table-cell;
+	vertical-align: middle;
+}
+/* 横线 */
+.z_veapsp1>div{
+	width:100%;
+	height:0.1rem;
+	background: #c2c2c2;
+}
+
+.z_veapsp2{
+	width: 2rem;
+	text-align:center;
+	font-size: 1.2rem;
+	color: #666666;
+	display: table-cell;
+	vertical-align: middle;
+}
+.z_btn{
+	width:59%;
+	margin: 0 auto;
+    padding-bottom:2.0rem;
+    padding-top: 1rem;
+}
+#z_btn1{
+	width:100%;
+	height:3.5rem;
+	margin: 0 auto;
+	font-size:1.7rem;
+	color:#fff;
+	font-weight:550;
+	text-align:center;
+	line-height:3.5rem;
+	background-color:#f7b135;
+	border-radius:0.5rem;
+	outline:none;
+	
+}
+.z_num{
+	right: 3.5rem;
+	font-size: 0.8rem;
+	color: #666666;
+	bottom: -1.5rem;
+}
+
+/* 总体评价   */
+.totalEval {
+    height:3rem; /* 设置高度 */
+    background-color: #f6f6f6;
+    text-align: center;
+    display: table;
+    margin: 0 auto 2rem;
+
+    li{
+		width: 8rem;
+		line-height: 3.5rem;
+		float: left;
+		font-size: 1.2rem;
+		/* font-weight: bolder; */
+		border-radius: 0.6rem;
+		border: 2px solid #eeeeee;
+		letter-spacing: -1px;
+		display: table-cell;
+		margin: 0 0.4rem;
+	}
+}
+
+.li-on {
+	background-color:#f7b135;
+	color:#fff;
+}
+.li-off {
+	background-color:#fff;
+	color:#333;
+}
+
+.varea{
+	background-color: #efefef;
+	padding: 0.8rem;
+}
+/*---增加评价部分--end-- */
