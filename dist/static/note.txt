@@ -1,0 +1,94 @@
+
+
+-------------------------------------------
+webpack 图片路径问题  
+http://www.jb51.net/article/119782.htm
+
+vue2.0 资源文件assets和static的区别
+https://www.cnblogs.com/minigrasshopper/p/8011630.html
+
+路由跳转
+this.$router.push('/order-search');
+
+
+
+-----------------图片
+
+---assets里
+1.
+background: url(~assets/images/order/sj-top.png) no-repeat;
+
+<img  class="shanImg1" src="~assets/images/order/chuo1.png"/>
+
+2.
+<img :src="mysrc"/>
+import avatar from '@/assets/images/order/flow/job_accepted.png'
+data () {
+	    return {
+	    	mysrc:avatar
+	    }
+}
+
+-------static里 config/index.js里面设置assetsPublicPath: '/'
+1.sublime启动测试
+<img :src="mysrc"/>
+data () {
+	    return {
+	    	mysrc:'../static/flow/job_accepted.png'
+	    }
+}
+
+let url = getRootPath_ip() + '/static/data/order-next.json"
+
+
+
+-------static里 config/index.js里面设置assetsPublicPath: '/myvue/'
+1.sublime启动测试
+<img :src="mysrc"/>
+data () {
+	    return {
+	    	mysrc:'static/flow/job_accepted.png'
+	    }
+}
+
+let url = 'static/data/order-next.json"
+
+
+2.tomcat启动测试
+<img :src="mysrc"/>
+data () {
+	    return {
+	    	mysrc:'../static/flow/job_accepted.png'
+	    }
+}
+
+let url = getRootPath_ip() + '/static/data/order-next.json"
+
+
+
+
+----------------入口
+http://localhost:8089/myvue/order-search
+
+----------------json
+http://localhost:8089/static/data/order-list.json
+
+
+---------------tomcat部署
+http://localhost:8081/myvue/show-flow?orderNum=1803281121050568875&orderNum2=2018032800248778
+
+
+
+
+---------------api掉测试环境  01010029048
+http://10.252.1.102:8089/myvue/order-search?userName=18510729630&exCode=tmall&callCode=131172ad8ea3875a00eac487df6f3d05
+
+http://localhost:8089/myvue/order-search?userName=18510729630&exCode=tmall&callCode=131172ad8ea3875a00eac487df6f3d05  入口
+
+http://localhost:8089/myvue/show-flow?orderNum=1803141944101510014&orderNum2=1218031018046295
+http://localhost:8089/myvue/assess-submit?orderNum=1803141944101510014&expNo=
+http://localhost:8089/myvue/assess-show?orderNum=1803141944101510014
+
+
+---------------sublime git
+https://blog.csdn.net/kongjiea/article/details/41646911

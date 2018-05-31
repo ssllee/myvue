@@ -1,0 +1,35 @@
+{
+  "state": "1",
+  "data": [
+    {
+      "createDate": "2018-01-01 22:00",
+      "jobName": "订单已竣工",
+      "jobOther": "感谢",
+      "jobImgName": "job_order_completed"
+    },
+    {
+      "createDate": "2018-01-01 22:00",
+      "jobName": "施工已完成",
+      "jobOther": "",
+      "jobImgName": "job_construction_completed"
+    },
+    {
+      "createDate": "2018-01-01 15:00",
+      "jobName": "施工小哥已接单，请等待",
+      "jobOther": "小哥电话：18612123233,预约上门时间：2018-01-02 10:00",
+      "jobImgName": "job_construction_ordered"
+    },
+    {
+      "createDate": "2018-01-01 15:00",
+      "jobName": "订单已提交",
+      "jobOther": "",
+      "jobImgName": "job_accepted"
+    },
+    {
+      "createDate": "2018-01-01 15:00",
+      "jobName": "订单已提交",
+      "jobOther": "",
+      "jobImgName": "job_submited"
+    }
+  ]
+}
