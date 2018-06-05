@@ -1,6 +1,0 @@
-aaaa
-bbbb
-cccc
-dddd\n
-dddd\n
-cccc  dddd  
